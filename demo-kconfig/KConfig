@@ -1,0 +1,20 @@
+mainmenu "My main menu"
+choice SELECT_DESTINATION
+    prompt "Select data destination"
+    default SELECT_DESTINATION_TTY
+
+    config SELECT_DESTINATION_TTY
+        bool "show data in console"
+    config SELECT_DESTINATION_FILE
+        bool "save data to file"
+endchoice
+
+
+
+config MODULES1
+    bool "this is a config"
+    default y
+
+menuconfig MODULES2
+    bool "this is a menuconfig"
+    default y
